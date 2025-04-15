@@ -17,12 +17,16 @@
           {{ room.audioOn ? 'Turn Off Audio' : 'Turn On Audio' }}
         </button>
       </div>
+      <RouterLink to="/">
+      <button class="toggle-button">Log Out</button>
+    </RouterLink>
     </div>
   </div>
 </template>
 
 <script setup>
 import { reactive } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const rooms = reactive([
   { id: 1, name: 'Main Room', audioOn: false },

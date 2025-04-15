@@ -7,6 +7,7 @@ import Dashboard from './components/AdminPortal.vue'
 const routes = [
   { path: '/', component: Login },
   { path: '/dashboard', component: Dashboard },
+  
 ]
 
 const router = createRouter({
