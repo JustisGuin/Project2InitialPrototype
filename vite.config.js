@@ -5,8 +5,12 @@ export default defineConfig({
   base: '/Project2InitialPrototype/',
 
   build: {
-    outDir: 'docs', 
-  },
-
-  plugins: [vue()],
+    outDir: 'docs',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+      }
+    }
+  }
+  
 })
