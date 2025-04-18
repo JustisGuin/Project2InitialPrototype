@@ -84,7 +84,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
-import Navbar from './Navbar.vue'
+import Navbar from './NavBar.vue'
 import 'leaflet/dist/leaflet.css'
 
 const activeSection = ref('rooms')
@@ -151,7 +151,6 @@ function selectMember(member) {
 </script>
 
 <style>
-/* Reset the base styles to match login page font and smoothness */
 * {
   margin: 0;
   padding: 0;
@@ -164,14 +163,14 @@ body {
   color: #1e293b;
 }
 
-/* Admin wrapper */
+
 .admin-wrapper {
   min-height: 100vh;
   padding: 2rem;
   background-color: #f1f5f9;
 }
 
-/* Section general */
+
 .section {
   background: #ffffff;
   padding: 2rem;
@@ -188,7 +187,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Room cards */
+
 .room-list {
   display: flex;
   flex-wrap: wrap;
@@ -278,7 +277,7 @@ body {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background 0.2s;
+  
 }
 
 .add-country:hover {
@@ -300,7 +299,7 @@ body {
   border: none;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+
 }
 
 .family-button:hover {
