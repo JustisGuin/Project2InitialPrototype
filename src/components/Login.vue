@@ -1,7 +1,8 @@
 <template>
+   
   <div class="login-wrapper">
     <div class="login-card">
-      <img src="/public/minnetrista_logo.jpg" alt="Minnetrista Logo" class="login-logo" />
+      <img src="/minnetrista_logo.jpg" alt="Minnetrista Logo" class="login-logo" />
       <h2 class="login-title">Oakhurst Admin Login</h2>
 
       <label for="employeeId">Employee ID</label>

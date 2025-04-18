@@ -1,13 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, } from 'vue-router'
+
+
+
 import Login from './components/Login.vue'
-import Dashboard from './components/AdminPortal.vue'
+import AdminPortal from './components/AdminPortal.vue'
+
 
 const routes = [
-  { path: '/', component: Login },
-  { path: '/dashboard', component: Dashboard },
-  
+  { path: '/', name: 'home' ,component: Login },
+  { path: '/dashboard', name:'adminSide',component: AdminPortal },
 ]
 
 const router = createRouter({
